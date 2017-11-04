@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photoshoped_bg"
+    tools:context="com.example.davinci.proiect_android.LogInPage">
+
+
+    <TextView
+        android:id="@+id/Nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/LogInTextColor"
+        android:text="@string/nume"
+        android:layout_above="@+id/Grupa"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:id="@+id/Grupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="@string/grupa"
+        android:textColor="@color/LogInTextColor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Nume" />
+
+    <TextView
+        android:id="@+id/Titlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tema"
+        android:textColor="@color/LogInTextColor"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/BGCard"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/login_bg_card"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Username"
+        android:layout_alignStart="@+id/Username"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:text="Password" />
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:backgroundTint="@color/LogInButton"
+        android:textColor="@color/LogInButtonText"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/Username"
+        android:layout_alignStart="@+id/Password"
+        android:layout_alignEnd="@+id/Password" />
+
+    <Button
+        android:id="@+id/SignIn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Sign In Now"
+        android:textColor="@color/LogInTextColor"
+        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:textColorHighlight="@color/LogInButton"
+        android:layout_below="@+id/log_in_button"
+        android:layout_alignEnd="@+id/log_in_button" />
+</RelativeLayout>
