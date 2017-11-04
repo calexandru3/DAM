@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TableSelectionMenu" />
+        <activity android:name=".AddDomains" />
     </application>
 
 </manifest>

@@ -16,6 +16,7 @@
         android:textColor="@color/LogInTextColor"
         android:text="@string/nume"
         android:layout_above="@+id/Grupa"
+        android:textStyle="bold"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="15dp" />
 
@@ -27,6 +28,7 @@
         android:text="@string/grupa"
         android:textColor="@color/LogInTextColor"
         android:layout_alignParentBottom="true"
+        android:textStyle="bold"
         android:layout_alignStart="@+id/Nume" />
 
     <TextView
