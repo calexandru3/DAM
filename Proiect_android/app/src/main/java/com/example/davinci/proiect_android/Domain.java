@@ -11,13 +11,17 @@ public class Domain {
     private int id;
     private String title;
     private String description;
-    private Uri image;
+    private int image;
 
-    public Domain(int id, String title, String description, Uri image) {
+    public Domain(int id, String title, String description, int image) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.image = image;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -28,11 +32,11 @@ public class Domain {
         this.title = title;
     }
 
-    public Uri getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(Uri image) {
+    public void setImage(int image) {
         this.image = image;
     }
 

@@ -24,6 +24,7 @@ public class AddDomains extends AppCompatActivity {
 
         img = (ImageView) findViewById(R.id.pick_image);
 
+
     }
 
     public void Save(View view){
@@ -33,18 +34,22 @@ public class AddDomains extends AppCompatActivity {
         if (!titlu.getText().equals("") && !description.getText().equals("")) {
 
             //TODO send domain to database
-            Domain new_dom = new Domain(1, titlu.getText().toString(), description.getText().toString(), null);
+            Domain new_dom = new Domain(1, titlu.getText().toString(), description.getText().toString(), 0);
+            ListDomain.getList().add(new_dom);
+            setResult(RESULT_OK);
             Toast.makeText(this, new_dom.toString(), Toast.LENGTH_SHORT).show();
-            return;
+            finish();
 
         } else {
 
             Toast.makeText(this, "Titlu si descriere obligatorii!", Toast.LENGTH_LONG).show();
 
         }
+
     }
 
     public void Cancel(View view){
+        setResult(RESULT_CANCELED);
         finish();
     }
 
